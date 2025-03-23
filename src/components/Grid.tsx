@@ -58,7 +58,7 @@ const Grid: FC = () => {
           columnResizingMode="nextColumn"
           columnAutoWidth={true}
           editing={{
-            mode: "row",
+            mode: "batch",
             allowAdding: true,
             allowUpdating: true,
             allowDeleting: true,
@@ -76,7 +76,7 @@ const Grid: FC = () => {
   return (
     <div className="wrapper">
       <GridObserver />
-      <Button text="Patch Store.Data" onClick={addItemToStore} />
+      <Button text="Add Items" onClick={addItemToStore} />
     </div>
   );
 };
